@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            // Pedir el primer número al usuario
+        var numero1 = prompt("Ingresa el primer número:");
+
+            // Validar si el primer número es válido
+        if (isNaN(numero1)) {
+            alert("El valor ingresado no es un número válido. Por favor, ingresa un número.");
+        }
+
+            // Pedir el segundo número al usuario
+        var numero2 = prompt("Ingresa el segundo número:");
+
+            // Validar si el segundo número es válido
+        if (isNaN(numero2)) {
+            alert("El valor ingresado no es un número válido. Por favor, ingresa un número.");
+        }
+
+            // Convertir los números a tipo Number
+        numero1 = Number(numero1);
+        numero2 = Number(numero2);
+
+            // Calcular la suma de los números
+        var suma = numero1 + numero2;
+
+            // Mostrar la suma en un alert
+        alert("La suma de los números ingresados es: " + suma);
+    </script>
+</body>
+</html>

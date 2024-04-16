@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            // Declarar variables para las notas y la suma
+        var nota1, nota2, nota3, suma, promedio;
+
+            // Pedir la primera nota al usuario y validar que sea un número válido
+        do {
+            nota1 = prompt("Ingresa la primera nota:");
+        } while (isNaN(nota1));
+
+            // Pedir la segunda nota al usuario y validar que sea un número válido
+        do {
+            nota2 = prompt("Ingresa la segunda nota:");
+        } while (isNaN(nota2));
+
+            // Pedir la tercera nota al usuario y validar que sea un número válido
+        do {
+            nota3 = prompt("Ingresa la tercera nota:");
+        } while (isNaN(nota3));
+
+            // Calcular la suma de las notas
+        suma = parseFloat(nota1) + parseFloat(nota2) + parseFloat(nota3);
+
+            // Calcular el promedio
+        promedio = suma / 3;
+
+            // Determinar si el estudiante está aprobado o reprobado
+        var estado;
+        if (promedio >= 3) {
+            estado = "Aprobado";
+        } else {
+            estado = "Reprobado";
+        }
+
+            // Mostrar el promedio y el estado en un alert
+        alert("El promedio de las notas es: " + promedio.toFixed(2) + "\nEstado: " + estado);7
+    </script>
+</body>
+</html>
